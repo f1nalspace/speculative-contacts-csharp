@@ -6,10 +6,10 @@
 
         public Vector2 Row1 { get; }
 
-        public Matrix22()
+        public Matrix22(Vector2 row0, Vector2 row1)
         {
-            Row0 = new Vector2(1, 0);
-            Row1 = new Vector2(0, 1);
+            Row0 = row0;
+            Row1 = row1;
         }
 
         public Matrix22(double angle)
@@ -32,5 +32,11 @@
         {
             return RotateBy(v);
         }
+
+        /// <summary>
+        /// Defines the identity of <see cref="Matrix22"/>.
+        /// </summary>
+        public static ref readonly Matrix22 Identity => ref _identity;
+        private static readonly Matrix22 _identity = new Matrix22(Vector2.RightAxis, Vector2.UpAxis);
     }
 }

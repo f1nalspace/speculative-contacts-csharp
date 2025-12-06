@@ -6,12 +6,6 @@ using SpeculativeContacts.Engine;
 
 namespace SpeculativeContacts.Code
 {
-    public enum BodyType
-    {
-        Static = 0,
-        Dynamic,
-    }
-
     public abstract class RigidBody : ContentControl
     {
         public abstract BodyType Type { get; }

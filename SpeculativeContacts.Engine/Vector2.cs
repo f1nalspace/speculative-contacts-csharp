@@ -196,5 +196,23 @@ namespace SpeculativeContacts.Engine
             Vector2 row1 = m.Row1;
             return row0 * X + row1 * Y;
         }
+
+        /// <summary>
+        /// Defines a zero <see cref="Vector2"/.
+        /// </summary>
+        public static ref readonly Vector2 Zero => ref _zero;
+        private static readonly Vector2 _zero = new Vector2(0.0f, 0.0f);
+
+        /// <summary>
+        /// Defines a right axis <see cref="Vector2"/>.
+        /// </summary>
+        public static ref readonly Vector2 RightAxis => ref _right;
+        private static readonly Vector2 _right = new Vector2(1.0f, 0.0f);
+
+        /// <summary>
+        /// Defines a up axis <see cref="Vector2"/>.
+        /// </summary>
+        public static ref readonly Vector2 UpAxis => ref _up;
+        private static readonly Vector2 _up = new Vector2(0.0f, 1.0f);
     }
 }

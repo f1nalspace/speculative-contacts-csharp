@@ -52,7 +52,7 @@
 			double halfWidth = halfExtents.X;
             double halfHeight = halfExtents.Y;
 
-            Vector2 p = m.Pos;
+            Vector2 p = m.Offset;
 			Vector2 n = m.Row0;
             Vector2 t = m.Row1;
 
