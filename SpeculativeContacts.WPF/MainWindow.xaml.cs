@@ -1,4 +1,5 @@
 ﻿using SpeculativeContacts.Code;
+using SpeculativeContacts.Engine;
 using SpeculativeContacts.Scenarios;
 using System.Text;
 using System.Windows;

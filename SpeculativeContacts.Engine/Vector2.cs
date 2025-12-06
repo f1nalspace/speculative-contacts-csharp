@@ -1,10 +1,7 @@
-﻿using SpeculativeContacts.Converters;
+﻿using System;
 using System.ComponentModel;
-using System.Windows;
-using System.Windows.Documents;
-using System.Windows.Media;
 
-namespace SpeculativeContacts.Code
+namespace SpeculativeContacts.Engine
 {
     [TypeConverter(typeof(Vector2TypeConverter))]
     public struct Vector2
@@ -16,12 +13,6 @@ namespace SpeculativeContacts.Code
         {
             X = x;
             Y = y;
-        }
-
-        public Vector2(Point p)
-        {
-            X = p.X;
-            Y = p.Y;
         }
 
         public Vector2(Vector2 p)
@@ -84,8 +75,6 @@ namespace SpeculativeContacts.Code
             }
             return angle;
         }
-
-        public readonly Point GetPoint() => new Point(X, Y);
 
         public readonly double LenSquared => Dot(this);
 
@@ -180,19 +169,31 @@ namespace SpeculativeContacts.Code
             return "x=" + X + ",y=" + Y;
         }
 
-        public readonly Vector2 RotateIntoSpaceOf(Matrix m)
+        public readonly Vector2 RotateIntoSpaceOf(Matrix22 m)
         {
-            Vector2 row0 = new Vector2(m.M11, m.M12);
-            Vector2 row1 = new Vector2(m.M21, m.M22);
-
-            return new Vector2(this.Dot(row0), this.Dot(row1));
+            Vector2 row0 = m.Row0;
+            Vector2 row1 = m.Row1;
+            return new Vector2(Dot(row0), Dot(row1));
         }
 
-        public readonly Vector2 RotateBy(Matrix m)
+        public readonly Vector2 RotateIntoSpaceOf(Matrix23 m)
         {
-            Vector2 row0 = new Vector2(m.M11, m.M12);
-            Vector2 row1 = new Vector2(m.M21, m.M22);
+            Vector2 row0 = m.Row0;
+            Vector2 row1 = m.Row1;
+            return new Vector2(Dot(row0), Dot(row1));
+        }
 
+        public readonly Vector2 RotateBy(Matrix22 m)
+        {
+            Vector2 row0 = m.Row0;
+            Vector2 row1 = m.Row1;
+            return row0 * X + row1 * Y;
+        }
+
+        public readonly Vector2 RotateBy(Matrix23 m)
+        {
+            Vector2 row0 = m.Row0;
+            Vector2 row1 = m.Row1;
             return row0 * X + row1 * Y;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Windows.Media;
+﻿using SpeculativeContacts.Engine;
+using System.Windows.Media;
 
 namespace SpeculativeContacts.Code
 {

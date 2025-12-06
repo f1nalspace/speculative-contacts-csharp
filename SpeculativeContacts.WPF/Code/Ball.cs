@@ -1,4 +1,6 @@
-﻿namespace SpeculativeContacts.Code
+﻿using SpeculativeContacts.Engine;
+
+namespace SpeculativeContacts.Code
 {
 	public class Ball : RigidBody
 	{

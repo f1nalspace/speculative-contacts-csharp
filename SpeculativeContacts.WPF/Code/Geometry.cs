@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpeculativeContacts.Engine;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 

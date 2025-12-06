@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using SpeculativeContacts.Engine;
+using SpeculativeContacts.Extensions;
+using System.Diagnostics;
 using System.Windows.Media;
 
 namespace SpeculativeContacts.Code
@@ -89,10 +91,12 @@ namespace SpeculativeContacts.Code
                 // rotate into space of render transform
                 TransformGroup tg = (TransformGroup)this.RenderTransform;
 
-                Vector2 rdelta = delta.RotateIntoSpaceOf(tg.Value);
+                Matrix matrix = tg.Value;
+
+                Vector2 rdelta = delta.RotateIntoSpaceOf(matrix);
 
                 Vector2 dClamped = Vector2.Clamp(rdelta, -_halfExtents, _halfExtents);
-                Vector2 clampedP = ra.Position + dClamped.RotateBy(tg.Value);
+                Vector2 clampedP = ra.Position + dClamped.RotateBy(matrix);
 
                 // vector from clamped point to circle
                 Vector2 d = rb.Position - clampedP;

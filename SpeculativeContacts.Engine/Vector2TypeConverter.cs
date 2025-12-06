@@ -1,8 +1,8 @@
-using SpeculativeContacts.Engine;
+using System;
 using System.ComponentModel;
 using System.Globalization;
 
-namespace SpeculativeContacts.Converters
+namespace SpeculativeContacts.Engine
 {
     public class Vector2TypeConverter : TypeConverter
     {

@@ -1,25 +1,21 @@
-﻿namespace SpeculativeContacts.Code
+﻿namespace SpeculativeContacts.Engine
 {
-    public readonly struct Matrix23
+    public readonly struct Matrix22
     {
         public Vector2 Row0 { get; }
 
         public Vector2 Row1 { get; }
 
-        public Vector2 Pos { get; }
-
-        public Matrix23()
+        public Matrix22()
         {
             Row0 = new Vector2(1, 0);
             Row1 = new Vector2(0, 1);
-            Pos = new Vector2();
         }
 
-        public Matrix23(double angle, Vector2 pos)
+        public Matrix22(double angle)
         {
             Row0 = Vector2.FromAngle(angle);
             Row1 = Row0.Perp();
-            Pos = pos;
         }
 
         public Vector2 RotateIntoSpaceOf(Vector2 v)
@@ -34,7 +30,7 @@
 
         public Vector2 TransformBy(Vector2 v)
         {
-            return RotateBy(v) + Pos;
+            return RotateBy(v);
         }
     }
 }

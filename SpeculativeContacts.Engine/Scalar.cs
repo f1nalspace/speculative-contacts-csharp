@@ -1,17 +1,17 @@
 ﻿using System;
 
-namespace SpeculativeContacts.Code
+namespace SpeculativeContacts.Engine
 {
-	public class Scalar
+	public static class Scalar
 	{
 		public static double DegToRad(double degrees)
 		{
-			return (degrees / 180) * Math.PI;
+			return degrees / 180 * Math.PI;
 		}
 
 		public static double RadToDeg(double radians)
 		{
-			return (radians / Math.PI) * 180;
+			return radians / Math.PI * 180;
 		}
 
 		public static double Clamp(double a, double min, double max)

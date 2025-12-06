@@ -13,4 +13,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
 
+  <ItemGroup>
+    <ProjectReference Include="..\SpeculativeContacts.Engine\SpeculativeContacts.Engine.csproj" />
+  </ItemGroup>
+
 </Project>

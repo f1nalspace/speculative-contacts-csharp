@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.Diagnostics;
 using System.Windows.Media;
+using SpeculativeContacts.Engine;
 
 namespace SpeculativeContacts.Code
 {

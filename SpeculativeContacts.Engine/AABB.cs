@@ -1,4 +1,4 @@
-﻿namespace SpeculativeContacts.Code
+﻿namespace SpeculativeContacts.Engine
 {
 	public readonly struct AABB
 	{
