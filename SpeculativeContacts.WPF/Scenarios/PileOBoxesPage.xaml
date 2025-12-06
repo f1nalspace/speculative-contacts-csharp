@@ -1,0 +1,407 @@
+﻿<Scenarios:BaseScenarioPage x:Class="SpeculativeContacts.Scenarios.PileOBoxes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpeculativeContacts"
+      xmlns:Controls="clr-namespace:SpeculativeContacts.Controls"
+      xmlns:Scenarios="clr-namespace:SpeculativeContacts.Scenarios"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Pile-O-Boxes">
+
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="SceneCanvas">
+            <Controls:Floor Width="619" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="24" Y="409"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Box x:Name="m_xamlBox" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy1" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy2" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy3" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy4" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="323"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy5" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy6" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy7" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy8" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy9" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy10" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="266"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy11" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy12" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy13" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy14" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy15" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy16" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="205"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy17" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy18" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy19" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy20" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy21" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy22" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="137"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Floor Width="190" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="61"/>
+                        <TranslateTransform X="-49" Y="332"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="92"/>
+                        <TranslateTransform X="522" Y="332"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Box x:Name="m_xamlBox_Copy23" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy24" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy25" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy26" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy27" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy28" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="70"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy29" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="127" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy30" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="210" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy31" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="278" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy32" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="347" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy33" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="417" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+            <Controls:Box x:Name="m_xamlBox_Copy34" RenderTransformOrigin="0.5,0.5" Width="50" Height="50">
+                <Controls:Box.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="485" Y="14"/>
+                    </TransformGroup>
+                </Controls:Box.RenderTransform>
+            </Controls:Box>
+        </Canvas>
+    </Grid>
+</Scenarios:BaseScenarioPage>

@@ -1,0 +1,337 @@
+﻿<Scenarios:BaseScenarioPage x:Class="SpeculativeContacts.Scenarios.MultiBallPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpeculativeContacts.Scenarios"
+      xmlns:Controls="clr-namespace:SpeculativeContacts.Controls"
+      xmlns:Scenarios="clr-namespace:SpeculativeContacts.Scenarios"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Multi Ball">
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="SceneCanvas">
+            <Controls:Floor x:Name="m_xamlFloor" Width="376" Height="96" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-8"/>
+                        <TranslateTransform X="240" Y="345"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor x:Name="m_xamlFloor2" Width="385" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="9"/>
+                        <TranslateTransform X="60" Y="325"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor x:Name="m_xamlFloor2_Copy" Width="216" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-74"/>
+                        <TranslateTransform X="495" Y="230"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor x:Name="m_xamlFloor2_Copy1" Width="216" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-74"/>
+                        <TranslateTransform X="-15" Y="185"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor x:Name="m_xamlFloor2_Copy2" Width="216" Height="106" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-131"/>
+                        <TranslateTransform X="219" Y="350"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor x:Name="m_xamlFloor2_Copy3" Height="23" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform />
+                        <TranslateTransform X="250" Y="200"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+
+            <Controls:BlueBall x:Name="m_xamlLeftBall" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="375" Y="300"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="440" Y="230"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy1" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="350" Y="195"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy2" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="270" Y="230"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy3" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="490" Y="270"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy4" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="385" Y="245"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy5" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="195" Y="235"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy6" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="125" Y="245"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy7" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="145" Y="185"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy8" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="325" Y="250"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy9" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="430" Y="285"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy10" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="195" Y="140"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy11" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="270" Y="135"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy12" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="345" Y="140"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy13" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="410" Y="155"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy14" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="302" Y="94"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy15" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="399" Y="99"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy16" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="468" Y="171"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy17" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="455" Y="117"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy18" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="505" Y="211"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy19" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="221" Y="85"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy20" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="272" Y="44"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy21" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="301" Y="187"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy22" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="193" Y="185"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy23" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="401" Y="192"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+            <Controls:BlueBall x:Name="m_xamlLeftBall_Copy24" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="351" Y="58"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+        </Canvas>
+    </Grid>
+</Scenarios:BaseScenarioPage>

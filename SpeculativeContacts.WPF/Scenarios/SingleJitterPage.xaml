@@ -1,0 +1,87 @@
+﻿<Scenarios:BaseScenarioPage x:Class="SpeculativeContacts.Scenarios.SingleJitterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpeculativeContacts"
+      xmlns:Controls="clr-namespace:SpeculativeContacts.Controls"
+      xmlns:Scenarios="clr-namespace:SpeculativeContacts.Scenarios"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Single Jitter">
+
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="SceneCanvas">
+            <Controls:Floor Width="376" Height="96" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-8"/>
+                        <TranslateTransform X="240" Y="345"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="385" Height="50" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="9"/>
+                        <TranslateTransform X="60" Y="325"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="216" Height="50" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-74"/>
+                        <TranslateTransform X="495" Y="230"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="216" Height="50" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-74"/>
+                        <TranslateTransform X="-15" Y="185"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="216" Height="106" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-131"/>
+                        <TranslateTransform X="219" Y="350"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="50" Height="23" RenderTransformOrigin="0.5,0.5">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="250" Y="200"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:BlueBall Width="50" Height="50" RenderTransformOrigin="0.5,0.5">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="375" Y="250"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+        </Canvas>
+    </Grid>
+</Scenarios:BaseScenarioPage>

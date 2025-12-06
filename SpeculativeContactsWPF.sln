@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeculativeContactsWPF", "SpeculativeContacts.WPF\SpeculativeContactsWPF.csproj", "{8234AC13-D437-8D15-1107-DE1514801364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8234AC13-D437-8D15-1107-DE1514801364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8234AC13-D437-8D15-1107-DE1514801364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8234AC13-D437-8D15-1107-DE1514801364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8234AC13-D437-8D15-1107-DE1514801364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {706006D8-2349-493D-B974-C37602D5138B}
+	EndGlobalSection
+EndGlobal

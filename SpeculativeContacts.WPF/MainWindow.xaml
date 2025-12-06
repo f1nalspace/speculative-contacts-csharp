@@ -1,0 +1,58 @@
+﻿<Window x:Class="SpeculativeContacts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeculativeContacts"
+        xmlns:Scenarios="clr-namespace:SpeculativeContacts.Scenarios"
+        mc:Ignorable="d"
+        Title="Speculative Contacts" Height="720" Width="1200" Loaded="Window_Loaded">
+    <DockPanel LastChildFill="True">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="10">
+            <ComboBox x:Name="ScenarioCombobox" Width="200" SelectedIndex="0" SelectionChanged="ScenarioCombobox_SelectionChanged">
+                <Scenarios:ScenarioModel Name="Simple" Source="Scenarios/SimplePage.xaml" />
+                <Scenarios:ScenarioModel Name="Rolling Simple" Source="Scenarios/RollingSimplePage.xaml" />
+                <Scenarios:ScenarioModel Name="Multi Ball" Source="Scenarios/MultiBallPage.xaml" />
+                <Scenarios:ScenarioModel Name="Single Jitter" Source="Scenarios/SingleJitterPage.xaml" />
+                <Scenarios:ScenarioModel Name="Pile-O-Boxes" Source="Scenarios/PileOBoxesPage.xaml" />
+                <Scenarios:ScenarioModel Name="Angular" Source="Scenarios/AngularPage.xaml" />
+                <Scenarios:ScenarioModel Name="Angular Hard-Case" Source="Scenarios/AngularHardCasePage.xaml" />
+            </ComboBox>
+        </StackPanel>
+        <DockPanel LastChildFill="True">
+            <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Width="150" Margin="10 0">
+                <Label Content="Controls:" />
+                <Button Content="Restart" Click="OnClickRestart" Padding="10 5" />
+                <Grid Margin="0 10 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="stepButton" Content="Step" Click="OnStepClick" Padding="10 5" Margin="0 0 5 0" Grid.Column="0" />
+                    <Button x:Name="pauseContinueButton" Content="Pause" Click="OnPauseContinueClick" Padding="10 5" Margin="5 0 0 0" Grid.Column="1" />
+                </Grid>
+                <Label Content="Solver:" />
+                <ComboBox x:Name="m_solverTypeCombobox" SelectedIndex="1" Padding="10 5" SelectionChanged="m_solverTypeCombobox_SelectionChanged" >
+                    <ComboBoxItem Content="Discrete"/>
+                    <ComboBoxItem Content="Speculative"/>
+                    <ComboBoxItem Content="Discrete Sequential"/>
+                    <ComboBoxItem Content="Speculative Sequential"/>
+                </ComboBox>
+                <Label Content="Iterations:" />
+                <ComboBox x:Name="m_iterationsCombobox" SelectedIndex="2" Padding="10 5" SelectionChanged="m_iterationsCombobox_SelectionChanged" >
+                    <ComboBoxItem Content="1 iteration"/>
+                    <ComboBoxItem Content="2 iterations"/>
+                    <ComboBoxItem Content="3 iterations"/>
+                    <ComboBoxItem Content="10 iterations"/>
+                </ComboBox>
+                <Label Content="Time Step:" />
+                <Slider x:Name="m_timeStepScaleSlider" Minimum="0.0" Maximum="100.0" Value="0.0" TickPlacement="Both" TickFrequency="5.0" SmallChange="1.0" LargeChange="5.0" ValueChanged="m_timeStepScaleSlider_ValueChanged" />
+                <Label Content="Options:" />
+                <CheckBox x:Name="renderMotionBoundsCheckbox" Content="Render Motion Bounds" IsChecked="True" Checked="renderMotionBoundsCheckbox_Checked_Unchecked" Unchecked="renderMotionBoundsCheckbox_Checked_Unchecked" />
+                <CheckBox x:Name="renderContactsCheckbox" Content="Render Contacts" IsChecked="True" Checked="renderContactsCheckbox_Checked_Unchecked" Unchecked="renderContactsCheckbox_Checked_Unchecked" />
+                <CheckBox x:Name="renderOriginsCheckbox" Content="Render Origins" IsChecked="True" Checked="renderOriginsCheckbox_Checked_Unchecked" Unchecked="renderOriginsCheckbox_Checked_Unchecked" />
+            </StackPanel>
+            <Frame x:Name="FrameContainer" Margin="10 0 0 10" Background="CornflowerBlue" NavigationUIVisibility="Hidden" JournalOwnership="OwnsJournal" Navigated="FrameContainer_Navigated" ClipToBounds="True" />
+        </DockPanel>
+    </DockPanel>
+</Window>

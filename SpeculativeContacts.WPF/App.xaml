@@ -1,0 +1,52 @@
+﻿<Application x:Class="SpeculativeContacts.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SpeculativeContacts"
+             xmlns:Code="clr-namespace:SpeculativeContacts.Code"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="BallTemplate" TargetType="Code:RigidBody">
+            <Grid Width="50" Height="50" CacheMode="BitmapCache">
+                <Ellipse x:Name="BackgroundB" Stroke="Black" StrokeThickness="0" Fill="{TemplateBinding Foreground}"/>
+                <Ellipse x:Name="LinearGradient" Stroke="Black" StrokeThickness="0">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#99000000" Offset="1"/>
+                            <GradientStop Color="#3FFFFFFF"/>
+                            <GradientStop Color="Transparent" Offset="0.498"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="RadialGradient" Stroke="Black" StrokeThickness="0">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#99000000" Offset="1"/>
+                            <GradientStop Color="#3FFFFFFF"/>
+                            <GradientStop Color="#66FFFFFF"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="Highlight" Stroke="Black" StrokeThickness="0" Height="11" Margin="12,5,12,0" VerticalAlignment="Top">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Transparent" Offset="1"/>
+                            <GradientStop Color="#BAFFFFFF"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="RectangleTemplate" TargetType="Code:RigidBody">
+            <Grid>
+                <Rectangle Fill="White" Stroke="Black" />
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="PlaneTemplate" TargetType="Code:RigidBody">
+            <Grid>
+                <Path Fill="White" Stretch="Fill" Stroke="Black" Height="1" VerticalAlignment="Bottom" UseLayoutRounding="False" Data="M2,265 L603.04077,265"/>
+            </Grid>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

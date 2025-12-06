@@ -1,0 +1,47 @@
+﻿<Scenarios:BaseScenarioPage x:Class="SpeculativeContacts.Scenarios.RollingSimplePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpeculativeContacts"
+      xmlns:Controls="clr-namespace:SpeculativeContacts.Controls"
+      xmlns:Scenarios="clr-namespace:SpeculativeContacts.Scenarios"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="Rolling Simple">
+
+    <Grid x:Name="LayoutRoot">
+        <Canvas x:Name="SceneCanvas">
+            <Controls:Floor Width="600" Height="20" RenderTransformOrigin="0.5,0.5" DefaultFriction="0.1">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="5" />
+                        <TranslateTransform X="50" Y="150"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:Floor Width="800" Height="20" RenderTransformOrigin="0.5,0.5" DefaultFriction="0.1">
+                <Controls:Floor.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-10" />
+                        <TranslateTransform X="200" Y="300"/>
+                    </TransformGroup>
+                </Controls:Floor.RenderTransform>
+            </Controls:Floor>
+            <Controls:BlueBall Width="50" Height="50" RenderTransformOrigin="0.5,0.5" DefaultFriction="0.0">
+                <Controls:BlueBall.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="75" Y="25"/>
+                    </TransformGroup>
+                </Controls:BlueBall.RenderTransform>
+            </Controls:BlueBall>
+        </Canvas>
+    </Grid>
+</Scenarios:BaseScenarioPage>
